@@ -1,14 +1,24 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // generateREADME const
-const generateREADME = ({title, description, installation, usage, credits, license, features, contribution, tests}) => 
+const generateREADME = ({title, description, installation, usage, contribution, tests, license, questions, github, email}) => 
 `# ${title}
 
 ## Description
 
 ${description}
+
+## Table of Contents
+
+-[Installation](#installation)
+-[Usage](#usage)
+-[Contribution](#contribution)
+-[Tests](#tests)
+-[License](#license)
+-[Questions](#questions)
 
 ## Installation
 
@@ -18,26 +28,27 @@ ${installation}
 
 ${usage}
 
-## Credits
-
-${credits}
-
-## License
-
-${license}
-
-## Features
-
-${features}
-
-## How to Contribute
+## Contribution
 
 ${contribution}
 
 ## Tests
 
-${tests}`;
+${tests}
 
+## License
+
+${license}
+
+## Questions
+
+${questions}
+
+GitHub: ${github}
+
+Email: ${email};`
+
+//inquirer prompts
 inquirer
     .prompt([
        { type: 'input',
@@ -56,13 +67,18 @@ inquirer
       },
       {
         type: 'input',
+        name: 'tests',
+        message: 'If you ran tests on your project, provide the examples on how to run them here.',
+      },
+      {
+        type: 'input',
         name: 'usage',
         message: 'Provide instructions and examples for use.',
       },
       {
         type: 'input',
-        name: 'credits',
-        message: 'List any collaborators, third-party assets, or tutorials used here.',
+        name: 'contribution',
+        message: 'Include guidelines indicating how other developers can contribute to your project here, if applicable',
       },
       {
         type: 'list',
@@ -81,19 +97,19 @@ inquirer
       },
       {
         type: 'input',
-        name: 'features',
-        message: 'If your project has a lot of features, list them here.',
+        name: 'github',
+        message: 'Please provide your GitHub username',
       },
       {
         type: 'input',
-        name: 'contribution',
-        message: 'Include guidelines indicating how other developers can contribute to your project here, if applicable',
+        name: 'github',
+        message: 'Please provide your email address',
       },
       {
         type: 'input',
-        name: 'tests',
-        message: 'If you ran tests on your project, provide the examples on how to run them here.',
-      }
+        name: 'questions',
+        message: 'Provide instructions on how to be contacted through GitHub and email.',
+      },
     ])
     .then((answers) => {
         const readMeContent = generateREADME(answers);

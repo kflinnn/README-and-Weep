@@ -8,21 +8,25 @@ When the user is prompted for information about their application repository, th
 
 ## Examples
 
-Timer Function:
+Code for Inquirer Prompts:
 
-![Screen Shot 2022-12-05 at 5 14 04 PM](https://user-images.githubusercontent.com/116764540/205754226-08841bfd-e9d5-4de9-853c-c3dd8e6807bf.png)
+![Screen Shot 2023-01-24 at 5 56 57 PM](https://user-images.githubusercontent.com/116764540/214439712-a1c16341-e674-402e-8d7e-672f9b6ca0b0.png)
 
-Array with questions:
 
-![Screen Shot 2022-12-05 at 5 13 52 PM](https://user-images.githubusercontent.com/116764540/205754109-ec7d5457-c402-4acc-a4d5-3bfcdb8da31d.png)
+User Prompts in Terminal and Success of Generation:
 
-Initial Function:
+![Screen Shot 2023-01-24 at 6 02 10 PM](https://user-images.githubusercontent.com/116764540/214440415-a92d77bc-dc7c-48f5-9736-0200a6783d2f.png)
 
-![Screen Shot 2022-12-05 at 5 13 09 PM](https://user-images.githubusercontent.com/116764540/205753949-5b870a27-985c-4cb6-8802-ef23e9810a1b.png)
 
-Styling by use of CSS: 
 
-![Screen Shot 2022-12-05 at 5 12 18 PM](https://user-images.githubusercontent.com/116764540/205753606-009aacd1-c18d-49fe-b6c5-eaec736aa4bb.png)
+Function to Generate Markdown:
+
+![Screen Shot 2023-01-24 at 5 58 18 PM](https://user-images.githubusercontent.com/116764540/214439859-028e88a8-d518-4b2f-b37b-e46d5df12e30.png)
+
+
+Generated README:
+
+![Screen Shot 2023-01-24 at 6 03 56 PM](https://user-images.githubusercontent.com/116764540/214440650-ccef1f1c-0cd1-404b-9f5b-7fee5896fe99.png)
 
 
 ## License
@@ -55,5 +59,3 @@ Language: JavaScript
 
 NPM: Inquirer
 
-## Deployment
-https://kflinnn.github.io/Quiz-Yo-Self/
